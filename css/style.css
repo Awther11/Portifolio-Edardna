@@ -134,4 +134,52 @@ body {
 }
 
 
+@media (max-width: 700px) {
+    body {
+        padding: 0 16px;
+        box-sizing: border-box;
+    }
 
+    .apresentacao {
+        grid-template-columns: 1fr;
+        justify-items: center;
+        gap: 20px;
+        padding: 24px 20px;
+        margin: 24px auto 0;
+    }
+
+    .foto,
+    .redes,
+    .apresentacao h1 {
+        grid-column: 1;
+        grid-row: auto;
+    }
+
+    .foto {
+        width: 200px;
+        height: 200px;
+    }
+
+    .redes {
+        flex-wrap: wrap;
+    }
+
+    .apresentacao h1 {
+        font-size: 1.1rem;
+        text-align: left;
+    }
+
+    .conarracoes {
+        padding: 24px 16px;
+        margin: 24px auto;
+    }
+
+    .videos {
+        gap: 24px;
+    }
+
+    .video {
+        width: 100%;
+        max-width: 300px;
+    }
+}
